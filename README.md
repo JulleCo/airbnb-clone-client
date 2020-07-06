@@ -1,3 +1,5 @@
+Repertoire collectif : <a href="https://github.com/VimalSurti">Vimal</a>, <a href="https://github.com/Gass-Dev">Gwen</a>, <a href="https://github.com/JulleCo">Coline</a>, <a href="https://github.com/chloe-alm">Chloé</a>.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
