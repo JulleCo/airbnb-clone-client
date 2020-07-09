@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PlaceListItem = (props) => {
+const ListPlacesItem = (props) => {
     const {place}=props
     return(
         <div>
@@ -12,4 +12,4 @@ const PlaceListItem = (props) => {
     )
 }
 
-export default PlaceListItem;
+export default ListPlacesItem;
