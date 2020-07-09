@@ -3,7 +3,7 @@ import Axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 
-const CardPlace = () => {
+const DetailsPlace = () => {
     const [card, setCard] = useState({});
     let { id } = useParams();
 
@@ -32,4 +32,4 @@ const CardPlace = () => {
     )
 }
 
-export default CardPlace
+export default DetailsPlace

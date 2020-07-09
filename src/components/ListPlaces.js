@@ -2,9 +2,8 @@ import React, {
     useState,
     useEffect
 } from 'react';
-import '../App.css';
 import axios from 'axios';
-import PlaceListItem from './PlaceListItem';
+import ListPlacesItem from './ListPlacesItem';
 
 function ListPlaces() {
     const [list, setList] = useState([]);
@@ -13,12 +12,12 @@ function ListPlaces() {
         const axiosData = async () => {
             const result = await axios.get('http://localhost:8001/api/places')
             console.log('#1',result)
-
+            console.log('#2', result.data);
             setList(result.data)
             
         }
         axiosData()
-        console.log('#2', setList);
+        
         
     }, [])
     
@@ -27,7 +26,7 @@ function ListPlaces() {
             {
                 list.map((place) => {
                     return (
-                        <PlaceListItem place={place} key={place.name} />
+                        <ListPlacesItem place={place} key={place.name} />
                     )
                 })
             }

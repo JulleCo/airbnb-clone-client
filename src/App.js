@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/Home.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import ListPlaces from './components/ListPlaces';
 import Nav from './components/Nav';
-import CardPlace from './components/CardPlace';
+import DetailsPlace from './components/DetailsPlace';
 import Header from './components/Header';
 import Home from './components/Home';
 
@@ -20,7 +20,7 @@ function App() {
         <Header />
         <Switch>
             <Route path="/place-details/:id">
-              <CardPlace />
+              <DetailsPlace />
             </Route>
             <Route path="/list-places">
               <ListPlaces />
