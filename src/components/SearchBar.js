@@ -1,11 +1,11 @@
 import React from 'react'
 
-function MsgComponent() {
+function SearchBar() {
     return (
         <div>
-            BLM
+            Search Bar
         </div>
     )
 }
 
-export default MsgComponent
+export default SearchBar

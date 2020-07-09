@@ -6,30 +6,32 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import SearchBar from './components/SearchBar';
 import ListPlaces from './components/ListPlaces';
 // import Nav from './components/Nav';
 import DetailsPlace from './components/DetailsPlace';
 import Header from './components/Header';
-import Home from './components/Home';
+import MsgComponent from './components/MsgComponent';
+import Footer from './components/Footer';
 
 
 function App() {
   return ( 
     <>
+    <SearchBar />
       <Router>
         <Header />
         <Switch>
             <Route path="/place-details/:id">
               <DetailsPlace />
             </Route>
-            <Route path="/list-places">
-              <ListPlaces />
-            </Route>
             <Route path="/">
-              <Home />
+              <ListPlaces />
             </Route>
         </Switch>
       </Router>
+      <MsgComponent />
+      <Footer />
     </>
   );
 }
