@@ -10,15 +10,16 @@ function ListPlaces() {
     const [list, setList] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
+        const axiosData = async () => {
             const result = await axios.get('http://localhost:8001/api/places')
-            // const jsonResponse = await result.json()
-            console.log(result)
+            console.log('#1',result)
 
             setList(result.data)
+            
         }
-        fetchData()
-        // ListPlaces()
+        axiosData()
+        console.log('#2', setList);
+        
     }, [])
     
     return (
