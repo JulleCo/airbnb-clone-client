@@ -1,11 +1,11 @@
 import React from 'react'
 
-function MsgComponent() {
+function Footer() {
     return (
         <div>
-            BLM
+            Footer
         </div>
     )
 }
 
-export default MsgComponent
+export default Footer
