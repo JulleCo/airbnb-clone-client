@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import ListPlaces from './components/ListPlaces';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 import DetailsPlace from './components/DetailsPlace';
 import Header from './components/Header';
 import Home from './components/Home';
