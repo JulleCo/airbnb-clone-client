@@ -1,0 +1,177 @@
+.FooterContent{
+    background-color: $color-background-grey-footer;
+    padding: 1rem 1rem 0 1rem;
+    margin-top: 2.5rem;
+    height: 160vh;
+    width: 92vw;
+    @include media(tablet){
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        height: 80%;
+        // padding: 1rem 1rem 0 1rem;
+    }
+    @include media(desktop){
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 50vh;
+    }
+    & hr{
+        border-color: #919191;
+        width:100%;
+        @include media(desktop){
+            display: none;
+        }
+    }
+    & h5{
+        color: #060606;
+        margin: 1.5em 0 -.9em 0;
+        font-weight: 900;
+        font-size: .7em;
+        display: inline;
+    } 
+    &_propos{
+       @include media(tablet){
+        &_links{
+            display: flex;
+            flex-wrap: wrap;
+            height: 12rem;
+            &_link{
+                margin-right: 13.3em;
+                width: calc(30% / 3); 
+                }
+            } 
+       }
+       @include media(desktop){
+           height: 30%;
+       }
+    }
+    &_communaute{
+        @include media(tablet){
+            &_links{
+                display: flex;
+                flex-wrap: wrap;
+                &_link{
+                    width: calc(100% / 3)
+                }
+            } 
+        }
+        @include media(desktop){
+            height: 30%;
+        }
+    }
+    &_hote{
+        @include media(tablet){
+            &_links{
+                display: flex;
+                flex-wrap: wrap;
+                &_link{
+                    width: calc(100% / 3);
+                } 
+            }
+        }
+        @include media(desktop){
+            height: 30%;
+        }
+    }
+    &_assistance{
+        @include media(tablet){
+            &_links{
+                display: flex;
+                flex-wrap: wrap;
+                &_link{
+                    width: calc(100% / 3);
+                } 
+            }
+        }
+        @include media(desktop){
+            height: 30%;
+        }
+    }
+    & ul{
+        padding: 0;
+        font-size: .8em;
+    }
+    & li{
+        list-style-type: none;
+        line-height: 1.8rem;
+        margin: 0 8em 0 0;
+        width: 100%;
+        @include media(tablet){
+            width: 12em;
+            height: 4em;
+            line-height: 1.3em;
+            margin: 0 5em 0 0;
+        }
+    }
+    & a{
+        text-decoration: none;
+        color: #303030;
+        font-weight: 500;
+        outline: none;
+        cursor: pointer;
+        & :hover{
+            text-decoration: underline;
+            color: #5c5c5c;
+        }
+        @include media(tablet){
+            width:125px;
+            height: 1em;
+        }
+    }
+    &_legal{
+        color: #4A4A4A;
+        font-size: .8em;
+        @include media(desktop){
+            // background-color: red;
+            display: flex;
+            padding-top: 20em;       
+        }
+        &_top{
+            font-weight: 800;
+            display: flex;
+            & span{
+                padding-left: 2em;
+            }
+            @include media(desktop){
+                width: 20vw;
+            }
+            &_globe{
+                // display: inline-block;
+                padding-right: 1.5rem;
+            }
+            // @include media(desktop){
+                
+            // }
+            &_socialMedia{
+                padding-left: 4em;
+                font-size: 1.5em;
+                color: #000000;
+                display: flex;
+                @include media(desktop){
+                    display: none;
+                }
+                
+                &_twit, &_insta{
+                    padding-left: 1em;
+                }
+            }
+        }
+        &_middle, &_bottom{
+            font-size: 1em;
+        }
+        &_middle{
+            @include media(desktop){
+                width: 20vw;
+            }
+        }
+        &_bottom{
+            width: 80%;
+            @include media(desktop){
+                // text-align: center;
+            }
+        }
+    }
+}
