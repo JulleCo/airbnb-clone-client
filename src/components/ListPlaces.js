@@ -12,9 +12,11 @@ import Footer from '../components/Footer';
 function ListPlaces() {
     const [list, setList] = useState([]);
 
+    const [cityName, setCityName] = useState('');
+
     useEffect(() => {
         const axiosData = async () => {
-            const result = await axios.get('http://localhost:8001/api/places')
+            const result = await axios.get(`http://localhost:8001/api/places?city=${cityName}`)
             console.log('#1',result)
             console.log('#2', result.data);
             setList(result.data)
@@ -27,7 +29,7 @@ function ListPlaces() {
 
     return (
         <div className ="placeList">
-            <SearchBar />
+            <SearchBar setCityName={setCityName} />
             <div className ="placeList_appart">
                 <h2 className="placeList_appart_titre">Inutile de s'éloigner loin pour trouver ce qui compte</h2>
                 <div className="placeList_appart_item">{

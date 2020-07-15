@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/logo-airbnb-desktop.png'
 import ExplorerRed from '../assets/images/logo-red-airbnb.png'
@@ -7,22 +7,13 @@ import EnregistreRed from '../assets/images/like-red.png'
 import EnregistreGrey from '../assets/images/like-grey.png'
 import ConnexionRed from '../assets/images/utilisateur-red.png'
 import ConnexionGrey from '../assets/images/utilisateur-grey.png'
+import HyperModal from 'react-hyper-modal';
+import Signup from './Signup';
 
 
 const Nav = () => {
-    // let navBarre = document.getElementById("main");
-    // let topPos = navBarre.offsetTop; 
-
-    // window.addEventListener('scroll', () => {
-    //     if (scrolled >= topPos){
-    //     navBarre.style.position = "fixed" ;
-    //     document.body.style.paddingTop = navBarre.offsetHeight + 'px';
-    //     } else {
-    //     navBarre.style.position = "";
-    //     document.body.style.paddingTop = 0;
-    //     }
-    // })
-
+    const[isOpen, setIsOpen] = useState(false)
+    const openModal = () => {setIsOpen(true)}
     return (
         <div className="navBar">
             <nav className="navBar_navMobile">
@@ -63,9 +54,9 @@ const Nav = () => {
                             <h2>Aide</h2>
                         </Link>
                         
-                        <Link to="/signup" className="navBar_navDesktop_menu_link">
+                        <button onClick={openModal} className="navBar_navDesktop_menu_link">
                             <h2>Inscription</h2>
-                        </Link>
+                        </button>
                         
                         <Link to="/signin" className="navBar_navDesktop_menu_linkConnexion">
                             <h2>Connexion</h2>
@@ -74,6 +65,9 @@ const Nav = () => {
                     
             </nav>
 
+            <HyperModal isOpen={isOpen} requestClose={()=>{setIsOpen(false)}}>
+            <Signup setIsOpen={setIsOpen} />
+            </HyperModal>
         </div>
     )
 }
