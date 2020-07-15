@@ -1,0 +1,34 @@
+.SearchBarContainer{
+    background-color: #ffffff;
+    display: flex;
+    height: 3.6rem;
+    width: 77vw;
+    justify-content: center;
+    padding-top: 3rem;
+    &_searchBar{
+        border: 1px solid #000000;
+        width: 80%;
+        border-radius: 50px;
+        display: flex;
+        padding-left: 1em;
+        font-size: 1.5em;
+        border-color: #DEDEDE;
+        & span{
+            padding-top: .6em;
+        }
+        & ::placeholder{
+            font-size: 1.2em;
+            color: #626262;
+            padding-left: 1.5rem;
+        }
+        & input{
+            border: none;
+        }
+        @include media(tablet) {
+            display: none;
+          }
+        @include media(desktop){
+            display: none; 
+        }
+    }
+}
