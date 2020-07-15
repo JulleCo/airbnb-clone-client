@@ -6,13 +6,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import SearchBar from './components/SearchBar';
-import ListPlaces from './components/ListPlaces';
-// import Nav from './components/Nav';
-import DetailsPlace from './components/DetailsPlace';
+
 import Header from './components/Header';
-import MsgComponent from './components/MsgComponent';
-import Footer from './components/Footer';
+import ListPlaces from './components/ListPlaces';
+import DetailsPlace from './components/DetailsPlace';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 
@@ -20,7 +17,6 @@ import Signin from './components/Signin';
 function App() {
   return ( 
     <>
-    <SearchBar />
       <Router>
         <Header />
         <Switch>
@@ -38,8 +34,6 @@ function App() {
             </Route>
         </Switch>
       </Router>
-      <MsgComponent />
-      <Footer />
     </>
   );
 }
