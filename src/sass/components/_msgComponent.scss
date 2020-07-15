@@ -8,10 +8,10 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin: 1rem;
+    margin: 4%;
     @include media(tablet){
         height: 18vh;
-        width: 87%;
+        width: 85%;
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
@@ -19,7 +19,9 @@
         padding-bottom: 2em;
     }
     @include media(desktop){
-        display: none;
+        // display: none;
+        width: 90%;
+        height:40vh;
     }
     &_textTop{
         height: 20%;
@@ -35,6 +37,9 @@
             text-align: left;
             padding-bottom: 1em;
         }
+        @include media(desktop){
+            font-size: 25px;
+        }
     }
     &_textBottom{
         height: 20%;
@@ -47,6 +52,9 @@
             width: 53%;
             text-align: left;
             padding: 1em 0 3em 0;
+        }
+        @include media(desktop){
+            font-size: 18px;
         }
     }
 }

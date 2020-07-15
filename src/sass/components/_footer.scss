@@ -1,22 +1,23 @@
 .FooterContent{
     background-color: $color-background-grey-footer;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1% 4% 0 4%;
     margin-top: 2.5rem;
     height: 160vh;
     width: 92vw;
     @include media(tablet){
         display: flex;
         flex-direction: column;
-        width: 96%;
+        width: 92%;
         height: 80%;
         // padding: 1rem 1rem 0 1rem;
     }
     @include media(desktop){
-        width: 100%;
+        width: 92%;
+        height: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        height: 50vh;
+       
     }
     & hr{
         border-color: #919191;

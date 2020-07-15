@@ -4,6 +4,10 @@ import React, {
 } from 'react';
 import axios from 'axios';
 import ListPlacesItem from './ListPlacesItem';
+import SearchBar from '../components/SearchBar';
+import MsgComponent from '../components/MsgComponent';
+import Footer from '../components/Footer';
+
 
 function ListPlaces() {
     const [list, setList] = useState([]);
@@ -23,6 +27,7 @@ function ListPlaces() {
 
     return (
         <div className ="placeList">
+            <SearchBar />
             <h2 className="placeList_titre">Inutile de s'éloigner loin pour trouver ce qui compte</h2>
             <div className="placeList_item">{
                 list.map((place) => {
@@ -31,6 +36,8 @@ function ListPlaces() {
                     )
                 })
             }</div>
+            <MsgComponent />
+            <Footer />
         </div>
     );
 }
