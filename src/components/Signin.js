@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 
-
-function Signin() {
+function Signin(props) {
     const [signin, setSignin] = useState(
         { email: '', password: '' }
     );
+
+    const [errorForm, setErrorForm] = useState(" ")
 
     const handleChange = (event) => {
         setSignin({...signin, [event.target.name]: event.target.value})
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
+    const handleSubmit = (e) => {
+        e.preventDefault()
         Axios.post('http://localhost:8001/api/signin', signin)
             .then((response) => {
-                console.log("#888",response)
+                // console.log("#888",response)
+                setSignin({email:'', password:'' })
+                props.setIsOpen(false)
             })
             .catch((error) => {
-                console.log("#999",error)
-                return response.status(500).json({
-                    'error': "Impossible de faire cela"
-                })
+                console.log("#999",error.response)
+                console.log("#999",typeof error)
+                setErrorForm(error.response.data.error)
+                // return response.status(500).json({
+                //     'error': "Impossible de faire cela"
+                // })
             })
     }
 
@@ -41,6 +46,12 @@ function Signin() {
             </div> 
 
             <button className="signinForm_submit" type="submit">Envoyer</button>
+        
+            <div>
+                {
+                    errorForm
+                }
+            </div>
         </form>
     )
 }

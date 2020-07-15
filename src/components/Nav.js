@@ -9,11 +9,16 @@ import ConnexionRed from '../assets/images/utilisateur-red.png'
 import ConnexionGrey from '../assets/images/utilisateur-grey.png'
 import HyperModal from 'react-hyper-modal';
 import Signup from './Signup';
+import Signin from './Signin';
 
 
 const Nav = () => {
     const[isOpen, setIsOpen] = useState(false)
     const openModal = () => {setIsOpen(true)}
+
+    const[isOpenUp, setIsOpenUp] = useState(false)
+    const openModalUp = () => {setIsOpenUp(true)}
+
     return (
         <div className="navBar">
             <nav className="navBar_navMobile">
@@ -54,19 +59,26 @@ const Nav = () => {
                             <h2>Aide</h2>
                         </Link>
                         
-                        <button onClick={openModal} className="navBar_navDesktop_menu_link">
+                        <button onClick={openModalUp} className="navBar_navDesktop_menu_linkInscription">
                             <h2>Inscription</h2>
                         </button>
                         
-                        <Link to="/signin" className="navBar_navDesktop_menu_linkConnexion">
+                        <button onClick={openModal} className="navBar_navDesktop_menu_linkConnexion">
                             <h2>Connexion</h2>
-                        </Link>
+                        </button>
+                        {/* <Link to="/signin" className="navBar_navDesktop_menu_linkConnexion">
+                            <h2>Connexion</h2>
+                        </Link> */}
                     </div>
                     
             </nav>
 
+            <HyperModal isOpen={isOpenUp} requestClose={()=>{setIsOpenUp(false)}}>
+                <Signup setIsOpen={setIsOpenUp} />
+            </HyperModal>
+
             <HyperModal isOpen={isOpen} requestClose={()=>{setIsOpen(false)}}>
-            <Signup setIsOpen={setIsOpen} />
+                <Signin setIsOpen={setIsOpen} />
             </HyperModal>
         </div>
     )
