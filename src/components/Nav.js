@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     return (
         <div>
-            <Link to="/list-places">Place</Link>
+            <Link to="/signup">Inscription</Link>
             {" • "}
-            <Link to="/">Home</Link>
+            <Link to="/signin">Connexion</Link>
+            {" • "}
+            <Link to="/">Appartements</Link>
         </div>
     )
 }

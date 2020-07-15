@@ -13,6 +13,7 @@ body {
   }
 }
 
+
 .BlmContainer {
   background-color: #000;
   color: #FAFAFA;
@@ -293,6 +294,7 @@ body {
 @media only screen and (min-width: 1024px) {
   .SearchBarContainer_searchBar {
     display: none;
+
   }
 }
 
