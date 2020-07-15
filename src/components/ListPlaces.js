@@ -28,14 +28,16 @@ function ListPlaces() {
     return (
         <div className ="placeList">
             <SearchBar />
-            <h2 className="placeList_titre">Inutile de s'éloigner loin pour trouver ce qui compte</h2>
-            <div className="placeList_item">{
-                list.map((place) => {
-                    return (
-                        <ListPlacesItem place={place} key={place.name}/>
-                    )
-                })
-            }</div>
+            <div className ="placeList_appart">
+                <h2 className="placeList_appart_titre">Inutile de s'éloigner loin pour trouver ce qui compte</h2>
+                <div className="placeList_appart_item">{
+                    list.map((place) => {
+                        return (
+                            <ListPlacesItem place={place} key={place.name}/>
+                        )
+                    })
+                }</div>
+            </div>
             <MsgComponent />
             <Footer />
         </div>

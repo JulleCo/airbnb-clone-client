@@ -258,7 +258,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 92%;
-    height: 80%;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -290,16 +290,15 @@ body {
   .FooterContent_propos_links {
     display: flex;
     flex-wrap: wrap;
-    height: 12rem;
   }
   .FooterContent_propos_links_link {
-    margin-right: 13.3em;
-    width: calc(30% / 3);
+    width: calc(100% / 3);
   }
 }
 @media only screen and (min-width: 1024px) {
   .FooterContent_propos {
     height: 30%;
+    width: 24%;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-width: 1024px) {
@@ -314,6 +313,7 @@ body {
 @media only screen and (min-width: 1024px) {
   .FooterContent_communaute {
     height: 30%;
+    width: 24%;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-width: 1024px) {
@@ -328,6 +328,7 @@ body {
 @media only screen and (min-width: 1024px) {
   .FooterContent_hote {
     height: 30%;
+    width: 24%;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-width: 1024px) {
@@ -342,6 +343,7 @@ body {
 @media only screen and (min-width: 1024px) {
   .FooterContent_assistance {
     height: 30%;
+    width: 24%;
   }
 }
 .FooterContent ul {
@@ -474,14 +476,14 @@ body {
   overflow: hidden;
   overflow-y: scroll;
 }
-.placeList_titre {
+.placeList_appart_titre {
   color: #FF385C;
   font-weight: 400;
   margin-left: 5%;
   margin-right: 5%;
 }
 @media only screen and (min-width: 1024px) {
-  .placeList_item {
+  .placeList_appart_item {
     height: 40%;
     margin: none;
     display: flex;

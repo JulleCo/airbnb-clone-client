@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         width: 92%;
-        height: 80%;
+        height: 100%;
         // padding: 1rem 1rem 0 1rem;
     }
     @include media(desktop){
@@ -38,15 +38,15 @@
         &_links{
             display: flex;
             flex-wrap: wrap;
-            height: 12rem;
+            // height: 12rem;
             &_link{
-                margin-right: 13.3em;
-                width: calc(30% / 3); 
-                }
-            } 
+                width: calc(100% / 3); 
+            }
+        } 
        }
        @include media(desktop){
            height: 30%;
+           width:24%;
        }
     }
     &_communaute{
@@ -61,6 +61,8 @@
         }
         @include media(desktop){
             height: 30%;
+            width:24%;
+
         }
     }
     &_hote{
@@ -75,6 +77,7 @@
         }
         @include media(desktop){
             height: 30%;
+            width:24%;
         }
     }
     &_assistance{
@@ -89,6 +92,7 @@
         }
         @include media(desktop){
             height: 30%;
+            width:24%;
         }
     }
     & ul{

@@ -4,21 +4,23 @@
     height: 90vh;
     overflow: hidden;
     overflow-y: scroll;
-    &_titre{
-        color:$color-red;
-        font-weight: 400;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    &_item{
-        // border:4px yellow solid;
-        @include media (desktop){
-            // background-color: blueviolet;
-            height: 40%;
-            margin:none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+    &_appart{
+        &_titre{
+            color:$color-red;
+            font-weight: 400;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        &_item{
+            // border:4px yellow solid;
+            @include media (desktop){
+                // background-color: blueviolet;
+                height: 40%;
+                margin:none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
         }
     }
 }
