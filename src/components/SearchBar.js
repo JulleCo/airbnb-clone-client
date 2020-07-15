@@ -4,6 +4,8 @@ import { FaSearch } from 'react-icons/fa'
 
 function SearchBar(props) {
 
+
+
 return (
 <div className='SearchBarContainer'>
     <div className='SearchBarContainer_searchBar'>
