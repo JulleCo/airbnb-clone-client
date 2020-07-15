@@ -13,6 +13,8 @@ import DetailsPlace from './components/DetailsPlace';
 import Header from './components/Header';
 import MsgComponent from './components/MsgComponent';
 import Footer from './components/Footer';
+import Signup from './components/Signup';
+import Signin from './components/Signin';
 
 
 function App() {
@@ -24,6 +26,12 @@ function App() {
         <Switch>
             <Route path="/place-details/:id">
               <DetailsPlace />
+            </Route>
+            <Route path="/signin">
+              <Signin />
+            </Route>
+            <Route path="/signup">
+              <Signup />
             </Route>
             <Route path="/">
               <ListPlaces />

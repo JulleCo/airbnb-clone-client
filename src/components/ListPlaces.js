@@ -20,18 +20,21 @@ function ListPlaces() {
         
         
     }, [])
-    
+
     return (
-        <div>
-            {
+        <div className ="placeList">
+            <h2 className="placeList_titre">Inutile de s'éloigner loin pour trouver ce qui compte</h2>
+            <div className="placeList_item">{
                 list.map((place) => {
                     return (
-                        <ListPlacesItem place={place} key={place.name} />
+                        <ListPlacesItem place={place} key={place.name}/>
                     )
                 })
-            }
+            }</div>
         </div>
     );
 }
+    
+   
 
 export default ListPlaces;
