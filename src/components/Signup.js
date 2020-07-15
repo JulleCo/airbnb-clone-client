@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
+import { Redirect } from 'react-router-dom';
+import { useAlert } from 'react-alert'
 
-function Signup() {
+
+function Signup(props) {
     const [signup, setSignup] = useState(
-        { firstName: '', lastName: '', email: '', password: '' }
+        { role: '', firstName: '', lastName: '', email: '', password: '' }
     );
+
+    const [redirect, setRedirect] = useState(
+        false
+    )
+
+    const [errorForm, setErrorForm] = useState(" ")
+
+    const alert = useAlert()
 
     const handleChange = (event) => {
         setSignup({...signup, [event.target.name]: event.target.value})
@@ -14,13 +25,19 @@ function Signup() {
         e.preventDefault()
         Axios.post('http://localhost:8001/api/signup', signup)
             .then((response) => {
-                console.log("#666",response)
+                // console.log("#666",response)
+                setSignup({ role: '', firstName: '', lastName: '', email: '', password: '' })
+                // setRedirect(true)
+                props.setIsOpen(false)
+                alert.show('Inscription validée!')
             })
             .catch((error) => {
-                console.log("#777",error)
-                return response.status(500).json({
-                    'error': "Impossible de faire cela"
-                })
+                console.log("#777",error.response)
+                console.log("#777",typeof error)
+                setErrorForm(error.response.data.error)
+                // return response.status(500).json({
+                //     'error': "Impossible de faire cela"
+                // })
             })
     }
 
@@ -71,6 +88,17 @@ function Signup() {
             </div> 
 
             <button className="signupForm_submit" type="submit">Envoyer</button>
+
+            <div>
+                {
+                    errorForm
+                }
+            </div>
+
+            {/* {
+                redirect ?<Redirect to="/"/>:null
+            } */}
+            
     </form>
     )
 }
