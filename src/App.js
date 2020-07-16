@@ -1,17 +1,10 @@
 import React from 'react';
 import './css/Home.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import Header from './components/Header';
 import ListPlaces from './components/ListPlaces';
 import DetailsPlace from './components/DetailsPlace';
-import Signup from './components/Signup';
-import Signin from './components/Signin';
 
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
@@ -35,12 +28,6 @@ function App() {
               <Route path="/place-details/:id">
                 <DetailsPlace />
               </Route>
-              <Route path="/signin">
-                <Signin />
-              </Route>
-              {/* <Route path="/signup">
-                <Signup />
-              </Route> */}
               <Route path="/">
                 <ListPlaces />
               </Route>

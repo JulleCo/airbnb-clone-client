@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 import { useAlert } from 'react-alert'
 
 
@@ -98,7 +98,6 @@ function Signup(props) {
             {/* {
                 redirect ?<Redirect to="/"/>:null
             } */}
-            
     </form>
     )
 }
