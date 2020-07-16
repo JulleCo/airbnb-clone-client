@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-alert": "^7.0.2",
     "react-alert-template-basic": "^1.0.0",
+    "react-autocomplete": "^1.8.1",
     "react-dom": "^16.13.1",
     "react-hyper-modal": "^1.2.11",
     "react-icons": "^3.10.0",

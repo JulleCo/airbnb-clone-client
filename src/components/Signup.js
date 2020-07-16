@@ -9,9 +9,9 @@ function Signup(props) {
         { role: '', firstName: '', lastName: '', email: '', password: '' }
     );
 
-    const [redirect, setRedirect] = useState(
-        false
-    )
+    // const [redirect, setRedirect] = useState(
+    //     false
+    // )
 
     const [errorForm, setErrorForm] = useState(" ")
 

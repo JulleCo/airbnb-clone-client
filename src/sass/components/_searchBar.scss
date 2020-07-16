@@ -1,5 +1,5 @@
 .SearchBarContainer{
-    background-color: #ffffff;
+    background-color:$color-background-white;
     display: flex;
     height: 3.6rem;
     width: 77vw;
@@ -13,16 +13,20 @@
         padding-left: 1em;
         font-size: 1.5em;
         border-color: #DEDEDE;
-        & span{
-            padding-top: .6em;
-        }
         & ::placeholder{
             font-size: 1.2em;
+            font-weight: 600;
             color: #626262;
             padding-left: 1.5rem;
         }
         & input{
             border: none;
+        }
+        &_button {
+            background-color:$color-background-white;
+            border:none;
+            font-size:1.6rem;
+            cursor: pointer;
         }
         @include media(tablet) {
             display: none;
