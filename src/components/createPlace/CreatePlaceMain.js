@@ -35,7 +35,7 @@ function CreatePlaceMain(props) {
             url:'http://localhost:8001/api/places',
             headers: {
                 'Content-Type': 'application/json',
-                authorization: `Bearer ${token}`,
+                'authorization': `Bearer ${token}`,
               },
               data:'createPlace'
         })
@@ -64,12 +64,12 @@ function CreatePlaceMain(props) {
                 <h2>Nous allons vous aider à publier votre annonce</h2>
                 <h3>Etape 1</h3>
                 <h3>Quel type de logement avez-vous?</h3>
-                <label>Nom de la location</label>
-                <input type="text" name="name" id="name" value={createPlace.name} onChange={handleChange} required/>
-                <label>Dans quelle ville ?</label>
-                <input type="text" name="cityName" id="cityName" value={createPlace.cityName} onChange={handleChange} required/>
-                <label>Nombre d'occupants possible :</label>
-                <input type="number" name="maxGuests" id="maxGuests" value={createPlace.maxGuests} onChange={handleChange} required/>
+                <label className="createPlaceForm_name_label">Nom de la location</label>
+                <input className="createPlaceForm_name_input" type="text" name="name" id="name" value={createPlace.name} onChange={handleChange} required/>
+                <label className="createPlaceForm_name_label">Dans quelle ville ?</label>
+                <input className="createPlaceForm_name_input" type="text" name="cityName" id="cityName" value={createPlace.cityName} onChange={handleChange} required/>
+                <label className="createPlaceForm_name_label">Nombre d'occupants possible :</label>
+                <input className="createPlaceForm_name_input" type="number" name="maxGuests" id="maxGuests" value={createPlace.maxGuests} onChange={handleChange} required/>
                 {/* <button className="createPlaceForm_name_next" type="submit">Continuer</button> */}
             </div>
 

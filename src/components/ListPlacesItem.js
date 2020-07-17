@@ -11,7 +11,7 @@ const ListPlacesItem = (props) => {
                 </div>
                 <div className="placeItem_link_infos">
                     
-                    <p className="placeItem_link_infos_titre"key={place.name}>{place.name} - emplacement<br></br>
+                    <p className="placeItem_link_infos_titre"key={place.name}>{place.name} <br></br>
                 {place.description}</p>
                                     
           

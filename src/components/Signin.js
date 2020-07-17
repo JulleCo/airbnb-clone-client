@@ -24,6 +24,7 @@ function Signin(props) {
         // .post('http://localhost:8001/api/signin', signin)
             .then((response) => {
                 console.log("#888",response)
+                localStorage.setItem("token", response.data.token)
                 setSignin({email:'', password:'' })
                 props.setIsOpen(false)
             })
