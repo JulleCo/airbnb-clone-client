@@ -51,8 +51,8 @@ const Nav = () => {
                             <h2>Héberger des voyageurs</h2>
                         </Link>
                         
-                        <Link to="/" className="navBar_navDesktop_menu_link">
-                            <h2>Créer une expérience</h2>
+                        <Link to="/place-create" className="navBar_navDesktop_menu_link">
+                            <h2>Créer une annonce</h2>
                         </Link>
                         
                         <Link to="/" className="navBar_navDesktop_menu_link">

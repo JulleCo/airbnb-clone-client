@@ -45,22 +45,19 @@ function Signup(props) {
 
     return (
         <form id="signupForm" method="POST" action="/signup" onSubmit={handleSubmit}>
-            {/* <div>
-                <label for="host">Je deviens hôte</label>   
-                <p>Je deviens hôte</p>
-                <input type="radio" id="host" name="role" value="host" onChange={handleChange} checked/>
-            </div>
-
-            <div>  
-                <label for="tourist">Je veux louer un endroit cool</label>  
-                <p>Je veux louer un endroit cool</p>
-                <input type="radio" id="tourist" name="role" value={signup.role} onChange={handleChange}/>
-            </div> */}
-
+            
             <div className="signupForm_role">
+                <label> Choisissez votre rôle :</label>
+                <select name="role"value={signup.role} onChange={handleChange}>
+                    <option value="">…</option>
+                    <option value="host">Hôte</option>
+                    <option value="tourist">Touriste</option>
+                </select>
+            </div>
+            {/* <div className="signupForm_role">
                 <p>Vous inscrivez-vous en tant que : "host" ou "tourist" ?</p>
                 <input type="text" name="role" id="host" value={signup.role} onChange={handleChange} required/>
-            </div>
+            </div> */}
 
 
             <div className="signupForm_firstName">
@@ -78,13 +75,13 @@ function Signup(props) {
             <div className="signupForm_email">
                 <p>Entrer votre email:</p>
                 {/* <label for="email">Entrer votre email:</label> */}
-                <input type="email" name="email" id="email" value={signup.email} onChange={handleChange} required />
+                <input type="email" name="email" id="emailSignup" value={signup.email} onChange={handleChange} required />
             </div>
 
             <div className="signupForm_password">
                 <p>Password (6 characters minimum, 1 capitale, 1 chiffre):</p>
                 {/* <label for="pass">Password (6 characters minimum, 1 capitale, 1 chiffre):</label> */}
-                <input type="password" id="pass" name="password" value={signup.password} onChange={handleChange} required />
+                <input type="password" id="passSignup" name="password" value={signup.password} onChange={handleChange} required />
             </div> 
 
             <button className="signupForm_submit" type="submit">Envoyer</button>
