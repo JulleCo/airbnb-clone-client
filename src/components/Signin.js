@@ -14,9 +14,15 @@ function Signin(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('http://localhost:8001/api/signin', signin)
+        Axios({
+            method:'post',
+            headers: { 'Content-Type': 'application/json' },
+            url:'http://localhost:8001/api/signin',
+            data: JSON.stringify(signin),
+        })
+        // .post('http://localhost:8001/api/signin', signin)
             .then((response) => {
-                // console.log("#888",response)
+                console.log("#888",response)
                 setSignin({email:'', password:'' })
                 props.setIsOpen(false)
             })

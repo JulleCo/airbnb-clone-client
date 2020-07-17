@@ -29,7 +29,17 @@ function CreatePlaceMain(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('http://localhost:8001/api/places', createPlace)
+        const token = localStorage.getItem('token');
+        Axios({
+            method:'post',
+            url:'http://localhost:8001/api/places',
+            headers: {
+                'Content-Type': 'application/json',
+                authorization: `Bearer ${token}`,
+              },
+              data:'createPlace'
+        })
+        // .post('http://localhost:8001/api/places', createPlace)
             .then((response) => {
                 console.log("#666",response)
                 setCreatePlace({  name: '', description: '', rooms: '', bathrooms: '', priceByNight: '' , maxGuests:'', imageOne:'', imageTwo:'', imageThree:'',idCity:''})
