@@ -8,6 +8,7 @@ import DetailsPlace from './components/DetailsPlace';
 
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
+import CreatePlaceMain from './components/createPlace/CreatePlaceMain';
 
 const options = {
   // you can also just use 'bottom center'
@@ -25,6 +26,9 @@ function App() {
         <Router>
           <Header />
           <Switch>
+            <Route path="/place-create">
+              <CreatePlaceMain />
+            </Route>
               <Route path="/place-details/:id">
                 <DetailsPlace />
               </Route>
