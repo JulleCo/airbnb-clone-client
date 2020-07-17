@@ -616,6 +616,15 @@ body {
   font-weight: bold;
 }
 
+.createPlaceForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.createPlaceForm_name {
+  flex-direction: column;
+  padding: 20vw;
+}
 .card_annonce {
   height: 86%;
   width: 86%;
