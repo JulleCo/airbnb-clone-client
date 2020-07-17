@@ -580,12 +580,154 @@ body {
 .createPlaceForm {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 8vh;
+  width: 80vw;
 }
 .createPlaceForm_name {
+  padding: 0 0 0 25vw;
   flex-direction: column;
-  padding: 20vw;
 }
+.createPlaceForm_name h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_name h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_title {
+  padding: 10px 0 10px 0;
+}
+.createPlaceForm_name_title_label {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_title_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_name_city {
+  padding: 10px 0 10px 0;
+}
+.createPlaceForm_name_city_label {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_city_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_name_guest {
+  padding: 10px 0 10px 0;
+}
+.createPlaceForm_name_guest_label {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_guest_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_description {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_description h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_description h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_description_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_rooms {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_rooms h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_rooms h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_rooms_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_bathrooms {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_bathrooms h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_bathrooms h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_bathrooms_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_priceByNight {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_priceByNight h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_priceByNight h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_priceByNight_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images {
+  padding: 0 0 0 25vw;
+  display: flex;
+  flex-direction: column;
+}
+.createPlaceForm_images h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_images h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_images_input {
+  flex-direction: column;
+}
+.createPlaceForm_images_input_inputOne {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images_input_inputTwo {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images_input_inputThree {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images_submit {
+  width: 20vw;
+  height: 3vh;
+  background-color: #FF385C;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  width: 15vw;
+  height: 6vh;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.createPlaceForm_images_submit:hover {
+  opacity: 0.7;
+}
+
 .card_annonce {
   height: 86%;
   width: 86%;
