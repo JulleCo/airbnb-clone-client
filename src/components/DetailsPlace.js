@@ -36,7 +36,7 @@ const DetailsPlace = () => {
                             <img className="card_annonce_main_images_other_b" src={card.imageThree} alt="bathroom appartement" />
                         </div>
                     </div>
-                    <h2 className="card_annonce_main_title">{card.name} • emplacement</h2>
+                    <h2 className="card_annonce_main_title">{card.name}</h2>
                 </div>
 
                 <div className="card_annonce_logement">

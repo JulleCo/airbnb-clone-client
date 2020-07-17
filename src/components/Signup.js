@@ -44,15 +44,15 @@ function Signup(props) {
 
 
     return (
-        <form id="signupForm" method="POST" action="/signup" onSubmit={handleSubmit}>
+        <form className="signupForm" method="POST" action="/signup" onSubmit={handleSubmit}>
             
             <div className="signupForm_role">
-                <label> Choisissez votre rôle :</label>
-                <select name="role"value={signup.role} onChange={handleChange}>
-                    <option value="">…</option>
-                    <option value="host">Hôte</option>
-                    <option value="tourist">Touriste</option>
-                </select>
+                <p className="signupForm_role_titre"> Choisissez votre rôle :</p>
+                    <select name="role"value={signup.role} onChange={handleChange}>
+                        <option value="">…</option>
+                        <option value="host">Hôte</option>
+                        <option value="tourist">Touriste</option>
+                    </select>
             </div>
             {/* <div className="signupForm_role">
                 <p>Vous inscrivez-vous en tant que : "host" ou "tourist" ?</p>
