@@ -1,0 +1,18 @@
+.createPlaceForm{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    &_name{
+        flex-direction: column;
+        padding:20vw;
+        & h2 {
+
+        }
+        & h3 {
+
+        }
+        &_label{
+
+        }
+    }
+}
