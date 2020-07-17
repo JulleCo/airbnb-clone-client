@@ -9,7 +9,7 @@
         padding-top: 2vh;
         display: flex;
         flex-direction: row;
-        align-content: space-around;;
+        align-content: space-around;
         justify-content: space-evenly;
 
         & h2{
@@ -136,24 +136,41 @@
                 font-size: 14px;
                 text-decoration: none;
             }
+            &_link{
+                text-decoration: none;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                &:hover{
+                    display: block;
+                    background-color: rgba(226, 226, 226, 0.678);
+                    border: 0px solid;
+                    border-radius: 30px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    text-align: center;
+                }
+            }
             &_linkConnexion{
                 border: 1px grey solid;
                 border-radius: 30px;
                 width: 15vw;
                 text-align: center;
+                background: $color-background-white;
+                border: 1px solid grey;
                 &:hover{
                     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
                 }
             }
-            &_link{
+            &_linkInscription{
+                background: $color-background-white;
+                border: 0px solid;
                 &:hover{
                     display: block;
                     background-color: rgba(226, 226, 226, 0.678);
-                    border: 1px solid transparent;
+                    border: 0px solid;
                     border-radius: 30px;
                     margin-left: 10px;
                     margin-right: 10px;
-                    // width: 15vw;
                     text-align: center;
                 }
             }

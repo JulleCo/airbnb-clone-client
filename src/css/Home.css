@@ -155,19 +155,39 @@ body {
   font-size: 14px;
   text-decoration: none;
 }
+.navBar_navDesktop_menu_link {
+  text-decoration: none;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.navBar_navDesktop_menu_link:hover {
+  display: block;
+  background-color: rgba(226, 226, 226, 0.678);
+  border: 0px solid;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
 .navBar_navDesktop_menu_linkConnexion {
   border: 1px grey solid;
   border-radius: 30px;
   width: 15vw;
   text-align: center;
+  background: #ffffff;
+  border: 1px solid grey;
 }
 .navBar_navDesktop_menu_linkConnexion:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
-.navBar_navDesktop_menu_link:hover {
+.navBar_navDesktop_menu_linkInscription {
+  background: #ffffff;
+  border: 0px solid;
+}
+.navBar_navDesktop_menu_linkInscription:hover {
   display: block;
   background-color: rgba(226, 226, 226, 0.678);
-  border: 1px solid transparent;
+  border: 0px solid;
   border-radius: 30px;
   margin-left: 10px;
   margin-right: 10px;
@@ -619,12 +639,154 @@ body {
 .createPlaceForm {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 8vh;
+  width: 80vw;
 }
 .createPlaceForm_name {
+  padding: 0 0 0 25vw;
   flex-direction: column;
-  padding: 20vw;
 }
+.createPlaceForm_name h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_name h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_title {
+  padding: 10px 0 10px 0;
+}
+.createPlaceForm_name_title_label {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_title_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_name_city {
+  padding: 10px 0 10px 0;
+}
+.createPlaceForm_name_city_label {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_city_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_name_guest {
+  padding: 10px 0 10px 0;
+}
+.createPlaceForm_name_guest_label {
+  font-size: 1.2rem;
+}
+.createPlaceForm_name_guest_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_description {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_description h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_description h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_description_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_rooms {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_rooms h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_rooms h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_rooms_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_bathrooms {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_bathrooms h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_bathrooms h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_bathrooms_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_priceByNight {
+  padding: 0 0 0 25vw;
+  flex-direction: column;
+}
+.createPlaceForm_priceByNight h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_priceByNight h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_priceByNight_input {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images {
+  padding: 0 0 0 25vw;
+  display: flex;
+  flex-direction: column;
+}
+.createPlaceForm_images h2 {
+  font-size: 2rem;
+  color: #FF385C;
+}
+.createPlaceForm_images h3 {
+  font-size: 1.2rem;
+}
+.createPlaceForm_images_input {
+  flex-direction: column;
+}
+.createPlaceForm_images_input_inputOne {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images_input_inputTwo {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images_input_inputThree {
+  width: 20vw;
+  height: 3vh;
+}
+.createPlaceForm_images_submit {
+  width: 20vw;
+  height: 3vh;
+  background-color: #FF385C;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+  width: 15vw;
+  height: 6vh;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.createPlaceForm_images_submit:hover {
+  opacity: 0.7;
+}
+
 .card_annonce {
   height: 86%;
   width: 86%;

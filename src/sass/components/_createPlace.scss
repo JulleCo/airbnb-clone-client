@@ -1,18 +1,156 @@
 .createPlaceForm{
     display:flex;
     flex-direction: column;
-    padding:20px;
+    padding:8vh;
+    width: 80vw;
     &_name{
+        padding:0 0 0 25vw;
         flex-direction: column;
-        padding:20vw;
         & h2 {
-
+            font-size: 2rem;
+            color:$color-red;
         }
         & h3 {
-
+            font-size: 1.2rem;
         }
-        &_label{
-
+        &_title{
+            padding:10px 0 10px 0;
+            &_label{
+                font-size: 1.2rem;
+            }
+            &_input{
+                width:20vw;
+                height: 3vh;
+            }
+        }
+        &_city{
+            padding:10px 0 10px 0;
+            &_label{
+                font-size: 1.2rem;
+            }
+            &_input{
+                width:20vw;
+                height: 3vh;
+            }
+        }
+        &_guest{
+            padding:10px 0 10px 0;
+            &_label{
+                font-size: 1.2rem;
+            }
+            &_input{
+                width:20vw;
+                height: 3vh;
+            }
         }
     }
+
+    &_description{
+        padding:0 0 0 25vw;
+        flex-direction: column;
+        & h2 {
+            font-size: 2rem;
+            color:$color-red;
+        }
+        & h3 {
+            font-size: 1.2rem;;
+        }
+        &_input{
+            width:20vw;
+            height: 3vh;
+        }
+    }
+
+    &_rooms{
+        padding:0 0 0 25vw;
+        flex-direction: column;
+        & h2 {
+            font-size: 2rem;
+            color:$color-red;
+        }
+        & h3 {
+            font-size: 1.2rem;;
+        }
+        &_input{
+            width:20vw;
+            height: 3vh;
+        }
+    }
+    
+    &_bathrooms{
+        padding:0 0 0 25vw;
+        flex-direction: column;
+        & h2 {
+            font-size: 2rem;
+            color:$color-red;
+        }
+        & h3 {
+            font-size: 1.2rem;;
+        }
+        &_input{
+            width:20vw;
+            height: 3vh;
+        }
+    }
+
+    &_priceByNight{
+        padding:0 0 0 25vw;
+        flex-direction: column;
+        & h2 {
+            font-size: 2rem;
+            color:$color-red;
+        }
+        & h3 {
+            font-size: 1.2rem;;
+        }
+        &_input{
+            width:20vw;
+            height: 3vh;
+        }
+    }
+
+    &_images{
+        padding:0 0 0 25vw;
+        display:flex;
+        flex-direction: column;
+        & h2 {
+            font-size: 2rem;
+            color:$color-red;
+        }
+        & h3 {
+            font-size: 1.2rem;
+        }
+        &_input{
+            flex-direction: column;
+            &_inputOne{
+                width:20vw;
+                height: 3vh;
+            }
+            &_inputTwo{
+                width:20vw;
+                height: 3vh;
+            }
+            &_inputThree{
+                width:20vw;
+                height: 3vh;
+            }
+        }
+        &_submit{
+            width:20vw;
+            height: 3vh;
+            background-color: $color-red;
+            color:white;
+            margin-top: 2rem;
+            text-align: center;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            &:hover{
+            opacity: 0.7;
+            }
+        }
+    }
+
 }

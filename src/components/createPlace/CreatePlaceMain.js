@@ -57,19 +57,25 @@ function CreatePlaceMain(props) {
 
 
     return (
-        <form id="createPlaceForm" method="POST" action="/places" onSubmit={handleSubmit}>
+        <form className="createPlaceForm" method="POST" action="/places" onSubmit={handleSubmit}>
            
             {/* <CreatePlaceName createPlace={createPlace} /> */}
             <div className="createPlaceForm_name">
                 <h2>Nous allons vous aider à publier votre annonce</h2>
                 <h3>Etape 1</h3>
                 <h3>Quel type de logement avez-vous?</h3>
-                <label className="createPlaceForm_name_label">Nom de la location</label>
-                <input className="createPlaceForm_name_input" type="text" name="name" id="name" value={createPlace.name} onChange={handleChange} required/>
-                <label className="createPlaceForm_name_label">Dans quelle ville ?</label>
-                <input className="createPlaceForm_name_input" type="text" name="cityName" id="cityName" value={createPlace.cityName} onChange={handleChange} required/>
-                <label className="createPlaceForm_name_label">Nombre d'occupants possible :</label>
-                <input className="createPlaceForm_name_input" type="number" name="maxGuests" id="maxGuests" value={createPlace.maxGuests} onChange={handleChange} required/>
+                <div className="createPlaceForm_name_title">
+                    <label className="createPlaceForm_name_title_label">Nom de la location</label>
+                    <input className="createPlaceForm_name_title_input" type="text" name="name" id="name" value={createPlace.name} onChange={handleChange} required/>
+                </div>
+                <div className="createPlaceForm_name_city">
+                    <label className="createPlaceForm_name_city_label">Dans quelle ville ?</label>
+                    <input className="createPlaceForm_name_city_input" type="text" name="cityName" id="cityName" value={createPlace.cityName} onChange={handleChange} required/>
+                </div>
+                <div className="createPlaceForm_name_guest">
+                    <label className="createPlaceForm_name_guest_label">Nombre d'occupants possible :</label>
+                    <input className="createPlaceForm_name_guest_input" type="number" name="maxGuests" id="maxGuests" value={createPlace.maxGuests} onChange={handleChange} required/>
+                </div>
                 {/* <button className="createPlaceForm_name_next" type="submit">Continuer</button> */}
             </div>
 
@@ -78,7 +84,7 @@ function CreatePlaceMain(props) {
                 <h2>Description du logement</h2>
                 <h3>Etape 2</h3>
                 <h3>La description de votre logement doit permettre aux voyageurs de s'imaginer ce que serait un séjour chez vous.</h3>
-                <input type="text" name="description" id="description" value={createPlace.description} onChange={handleChange} required/>
+                <input className="createPlaceForm_description_input" type="text" name="description" id="description" value={createPlace.description} onChange={handleChange} required/>
                 
                 {/* <button className="createPlaceForm_next" type="submit">Continuer</button> */}
             </div>
@@ -88,7 +94,7 @@ function CreatePlaceMain(props) {
                 <h2>Nombre de chambres</h2>
                 <h3>Etape 3</h3>
                 <h3>Combien y a t-il de chambres?</h3>
-                <input type="number" name="rooms" id="rooms" value={createPlace.rooms} onChange={handleChange} required/>
+                <input ClassName="createPlaceForm_rooms_input" type="number" name="rooms" id="rooms" value={createPlace.rooms} onChange={handleChange} required/>
                 
                 {/* <button className="createPlaceForm_next" type="submit">Continuer</button> */}
             </div>
@@ -98,7 +104,7 @@ function CreatePlaceMain(props) {
                 <h2>Nombre de salle de bain</h2>
                 <h3>Etape 4</h3>
                 <h3>Combien y a t-il de salle de bain?</h3>
-                <input type="number" name="bathrooms" id="bathrooms" value={createPlace.bathrooms} onChange={handleChange} required/>
+                <input ClassName="createPlaceForm_bathrooms_input" type="number" name="bathrooms" id="bathrooms" value={createPlace.bathrooms} onChange={handleChange} required/>
                 
                 {/* <button className="createPlaceForm_next" type="submit">Continuer</button> */}
             </div>
@@ -108,7 +114,7 @@ function CreatePlaceMain(props) {
                 <h2>Le prix a la nuit</h2>
                 <h3>Etape 5</h3>
                 <h3>Vous etes responsable du choix du prix de votre logement</h3>
-                <input type="number" name="priceByNight" id="priceByNight" value={createPlace.priceByNight} onChange={handleChange} required/>
+                <input ClassName="createPlaceForm_priceByNight_input" type="number" name="priceByNight" id="priceByNight" value={createPlace.priceByNight} onChange={handleChange} required/>
                 
                 {/* <button className="createPlaceForm_next" type="submit">Continuer</button> */}
             </div>
@@ -118,11 +124,11 @@ function CreatePlaceMain(props) {
                 <h2>Photos</h2>
                 <h3>Etape 6</h3>
                 <h3>Ajoutez des photos qui donnent aux voyages un aperçu de votre logement</h3>
-                <input type="text" name="imageOne" id="imageOne" value={createPlace.imageOne} onChange={handleChange} required/>
-
-                <input type="text" name="imageTwo" id="imageTow" value={createPlace.imageTwo} onChange={handleChange} required/>
-                
-                <input type="text" name="imageThree" id="imageThree" value={createPlace.imageThree} onChange={handleChange} required/>
+                <div className="createPlaceForm_images_input">
+                    <input ClassName="createPlaceForm_images_inputOne" type="text" name="imageOne" id="imageOne" value={createPlace.imageOne} onChange={handleChange} required/>
+                    <input ClassName="createPlaceForm_images_inputTwo"type="text" name="imageTwo" id="imageTow" value={createPlace.imageTwo} onChange={handleChange} required/>
+                    <input ClassName="createPlaceForm_images_inputThree" type="text" name="imageThree" id="imageThree" value={createPlace.imageThree} onChange={handleChange} required/>
+                </div>
                 <button className="createPlaceForm_images_submit" type="submit">Envoyer</button>
             </div>
 
