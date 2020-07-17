@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 
+
 function Signin(props) {
     const [signin, setSignin] = useState(
         { email: '', password: '' }
@@ -43,7 +44,7 @@ function Signin(props) {
             <div className="signinForm_email">
                 <p>Entrer votre email :</p>
                 {/* <label for="email">Entrer votre email: </label> */}
-                <input type="email" id="email" name="email" value={signin.email} onChange={handleChange} required />
+                <input className="signinForm_email_input" type="email" id="email" name="email" value={signin.email} onChange={handleChange} required />
             </div>
 
             <div className="signinForm_password">
