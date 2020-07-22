@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/logo-airbnb-desktop.png'
-import ExplorerRed from '../assets/images/logo-red-airbnb.png'
-import ExplorerGrey from '../assets/images/logo-grey-airbnb.png'
-import EnregistreRed from '../assets/images/like-red.png'
-import EnregistreGrey from '../assets/images/like-grey.png'
-import ConnexionRed from '../assets/images/utilisateur-red.png'
-import ConnexionGrey from '../assets/images/utilisateur-grey.png'
+import Logo from '../../assets/images/logo-airbnb-desktop.png'
+import ExplorerRed from '../../assets/images/logo-red-airbnb.png'
+import ExplorerGrey from '../../assets/images/logo-grey-airbnb.png'
+import EnregistreRed from '../../assets/images/like-red.png'
+import EnregistreGrey from '../../assets/images/like-grey.png'
+import ConnexionRed from '../../assets/images/utilisateur-red.png'
+import ConnexionGrey from '../../assets/images/utilisateur-grey.png'
+
 import HyperModal from 'react-hyper-modal';
-import Signup from './Signup';
-import Signin from './Signin';
+import Signup from '../organisms/Signup';
+import Signin from '../organisms/Signin';
 
 
 const Nav = () => {

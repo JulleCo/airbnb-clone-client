@@ -3,10 +3,10 @@ import React, {
     useEffect
 } from 'react';
 import axios from 'axios';
-import ListPlacesItem from './ListPlacesItem';
-import SearchBar from '../components/SearchBar';
-import MsgComponent from '../components/MsgComponent';
-import Footer from '../components/Footer';
+import ListPlacesItem from '../organisms/ListPlacesItem';
+import SearchBar from '../molecules/SearchBar';
+import MsgComponent from '../organisms/MsgComponent';
+import Footer from '../organisms/Footer';
 
 
 function ListPlaces(props) {

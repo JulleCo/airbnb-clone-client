@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Axios from 'axios';
 // import { Redirect } from 'react-router-dom';
 import { useAlert } from 'react-alert'
+import SubmitBtn from '../molecules/SubmitBtn';
 
 
 function Signup(props) {
@@ -84,7 +85,8 @@ function Signup(props) {
                 <input type="password" id="passSignup" name="password" value={signup.password} onChange={handleChange} required />
             </div> 
 
-            <button className="signupForm_submit" type="submit">Envoyer</button>
+            <SubmitBtn className="signupForm_submit" />
+           
 
             <div>
                 {
