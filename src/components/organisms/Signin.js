@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
+import SubmitBtn from '../molecules/SubmitBtn';
 
 
 function Signin(props) {
@@ -53,7 +54,7 @@ function Signin(props) {
                 <input type="password" id="pass" name="password" value={signin.password} onChange={handleChange} required />
             </div> 
 
-            <button className="signinForm_submit" type="submit">Envoyer</button>
+            <SubmitBtn className="signinForm_submit" />
         
             <div>
                 {

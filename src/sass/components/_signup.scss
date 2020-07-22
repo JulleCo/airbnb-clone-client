@@ -48,18 +48,4 @@
             margin-top: 1rem;
         }
     }
-    &_submit{
-        background-color: $color-red;
-        color:white;
-        margin-top: 1rem;
-        text-align: center;
-        width: 15vw;
-        height: 6vh;
-        border-radius: 5px;
-        cursor: pointer;
-        border: none;
-        &:hover{
-        opacity: 0.7;
-        }
-    }
 }

@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import Axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 
-import Home from '../assets/images/home.png'
-import Clean from '../assets/images/clean.png'
-import Best from '../assets/images/best.png'
-import Agenda from '../assets/images/agenda.png'
-import MsgComponent from '../components/MsgComponent';
-import Footer from '../components/Footer';
+import Home from '../../assets/images/home.png'
+import Clean from '../../assets/images/clean.png'
+import Best from '../../assets/images/best.png'
+import Agenda from '../../assets/images/agenda.png'
+
+import MsgComponent from '../organisms/MsgComponent';
+import Footer from '../organisms/Footer';
 
 const DetailsPlace = () => {
     const [card, setCard] = useState({});
